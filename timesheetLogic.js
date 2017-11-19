@@ -1,3 +1,7 @@
+$(document).ready(function(){
+  $('.parallax').parallax();
+});
+
 // Initialize Firebase
 var config = {
   apiKey: "AIzaSyCuczraN74lJyMtUn-qMEKEP7Ui3J1wjJE",
