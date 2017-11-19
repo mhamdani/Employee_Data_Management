@@ -7,10 +7,12 @@
     <meta charset="UTF-8">
     <title>Employee Tracker</title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bootstrap/Cloudlfare/ CDN -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
 
     <!-- Firebase Reference -->
     <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
@@ -27,10 +29,12 @@
     <div class="container">
 
       <!-- Jumbotron -->
-      <div class="jumbotron" style="background-color: black; color: white">
+      <div class="jumbotron jumbotron-fluid parallax" id="header">
+        <div class="container">
         <h1 class="text-center">Employee Data Management</h1>
-        <h3 class="text-center">A Comprehensive Directory of Employee Billable Hours</h3>
+        <h3 class="text-center">A Directory of Employee Billable Hours</h3>
       </div>
+    </div>
 
       <h4 class="text-right">Connected administrators: <strong><span id="connected-admins"></span></strong></h4>
 
@@ -99,9 +103,16 @@
 
     </div>
 
-    <!-- JavaScript -->
-    <script src="timesheetLogic.js"></script>
+<!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="container"><center>
+        <br><h9><p>&copy Michelle Hamdani</p></h9></center>
+      </div>
+    </footer>
 
+<!-- JavaScript -->
+    <script src="timesheetLogic.js"></script>
+		<script src="https://code.jquery.com/jquery.js"></script>
   </body>
 
 </html>
